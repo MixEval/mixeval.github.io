@@ -11,12 +11,12 @@
   <script src="https://kit.fontawesome.com/f8ddf9854a.js" crossorigin="anonymous"></script>
   <meta charset="utf-8">
   <meta name="description"
-        content="Fast and Dynamic Human Preference Approximation with LLM Benchmark Mixtures">
+        content="Deriving Wisdom of the Crowd from LLM Benchmark Mixtures">
   <meta name="keywords" content="MixEval, mixeval, Evaluation, Eval, LLM Evaluation, Human Preference, User Preference, Dynamic Benchmark, Benchmark Mixture, Web Query Detection, LMM, Large Language Model, artificial intelligence, AI, AGI, artificial general intelligence">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> MixEval: Fast and Dynamic Human Preference Approximation with LLM Benchmark Mixtures</title>
+  <title> MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures</title>
 
-  <!-- <link rel="icon" href="./static/images/mmmu_icon2.png"> -->
+  <link rel="icon" href="./static/images/mixeval/icons/mixeval.png">
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -44,6 +44,2748 @@
 </head>
 <body>
 
-  <h2 class="subtitle is-3 publication-subtitle">
-    The MixEval Leaderboard is Coming Soon!
-  </h2>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://mixeval.github.io/">
+            <b>MixEval</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
+          </a>          
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title is-bold">
+            <img src="static/images/mixeval/icons/mixeval.png" style="width:1em;vertical-align: middle" alt="Logo"/> 
+            <span class="mixeval" style="vertical-align: middle">MixEval</span>
+            </h1>
+          <h2 class="subtitle is-3 publication-subtitle">
+            Deriving Wisdom of the Crowd from LLM Benchmark Mixtures
+          </h2>
+          <div class="is-size-5 publication-authors">
+            <!-- <span class="author-block">Xiang Yue*<sup style="color:#6fbf73;">†,1</sup>,</span> -->
+            <span class="author-block">
+              <a href="https://jinjie.one/" style="text-decoration: none; color: inherit;">Jinjie Ni*<sup style="color:#6fbf73;">†,1</sup></a>,
+            </span>
+            <span class="author-block">
+              <a href="https://xuefuzhao.github.io/" style="text-decoration: none; color: inherit;">Fuzhao Xue*<sup style="color:#6fbf73;">1</sup></a>
+              ,
+            </span>
+            <!-- <span class="author-block">Yuansheng Ni*<sup style="color:#ffac33;">2</sup>,</span> -->
+            <span class="author-block">
+              <a href="https://xiangyue9607.github.io/" style="text-decoration: none; color: inherit;">Xiang Yue*<sup style="color:#ed4b82;">2</sup></a>
+              ,
+            </span><br>
+            <span class="author-block">
+              <a href="https://yuntiandeng.com/" style="text-decoration: none; color: inherit;">Yuntian Deng<sup style="color:#ffac33;">3</sup></a>
+              ,
+            </span>
+            <span class="author-block">Mahir Shah<sup style="color:#6fbf73;">1</sup>,</span>
+            <span class="author-block">Kabir Jain<sup style="color:#6fbf73;">1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.phontron.com/" style="text-decoration: none; color: inherit;">Graham Neubig<sup style="color:#ed4b82;">2</sup></a>
+              ,
+            </span>
+            <span class="author-block">
+              <a href="https://www.comp.nus.edu.sg/~youy/" style="text-decoration: none; color: inherit;">Yang You<sup style="color:#6fbf73;">1</sup></a>
+            </span>
+          
+          </div>
+          
+          <br>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup style="color:#6fbf73;">1</sup>National University of Singapore,</span>
+            <span class="author-block"><sup style="color:#ed4b82;">2</sup>Carnegie Mellon University,</span>
+            <span class="author-block"><sup style="color:#ffac33;">3</sup>Allen Institute for AI</span>
+          </div>
+
+          <br>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">*Core Contributors</span><br>
+            <span class="author-block">†Corresponding to:</span>
+            <span class="author-block"><a href="mailto:jinjieni@nus.edu.sg">jinjieni@nus.edu.sg</a></span>
+          </div>
+          
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <!-- @PAN TODO: change links -->
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <p style="font-size:18px">🤗</p>
+                  </span>
+                  <span>HF Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              
+              <!-- Leaderboard Link. -->
+              <span class="link-block">
+                <a href="#leaderboard"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon has-text-white">
+                    <i class="fa-solid fa-trophy"></i>
+                      <!-- <p style="font-size:18px">🏆</p> -->
+                  </span>
+                  <span>Leaderboard</span>
+                </a>
+              </span>
+
+              
+              <!-- Visualization Link. -->
+              <!-- <span class="link-block">
+                <a href="https://eval.ai/web/challenges/challenge-page/2179/overview"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon has-text-white">
+                      <i class="fa-solid fa-medal"></i>
+                  </span>
+                  <span>EvalAI</span>
+                </a>
+              </span> -->
+              <!-- Twitter Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon has-text-white">
+                    <i class="fa-brands fa-x-twitter"></i>
+                      <!-- <p style="font-size:18px">🌐</p> -->
+                  </span>
+                  <span>Twitter</span>
+                </a>
+              </span>
+              <!-- Examples. -->
+              <span class="link-block">
+                <a href="#examples"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon has-text-white">
+                    <i class="fa-solid fa-book"></i>
+                  </span>
+                  <span>Examples</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  </style>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <!-- <div class="hero-body">
+      <img src="static/images/tease_scores.png" alt="Examples from the dataset"/>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
+        free-viewpoint
+        portraits.
+      </h2>
+    </div> -->
+      <!-- <div class="box m-5"> -->
+        <div class="content has-text-centered">
+          <img src="static/images/mixeval/arena_cost.jpg" alt="Correlation-Cost Map" width="80%"/>
+          <div class="content has-text-justified" style="width: 90%; margin: auto; margin-bottom: 30px;">
+          <p> 
+            <a style="color: #999999ff;"> 
+            Benchmark correlations (%) with Chatbot Arena Elo, alongside the total costs of evaluating a single GPT-3.5-Turbo-0125 model. MixEval and MixEval-Hard show the highest correlations with Arena Elo and Arena Elo (En) among leading benchmarks. We reference the crowdsourcing price for Amazon Mechanical Turk ($0.05 per vote) when estimating the cost of evaluating a single model on Chatbot Arena (approximately $2,936). Chatbot Arena is prohibitively expensive, while MixEval and MixEval-Hard are cheap and cost-effective alternatives. For more details, please refer to our paper.
+            </a>
+          </p>
+          </div>  
+        </div>
+      <!-- </div> -->
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div style="width: 80%; margin: auto; margin-bottom: 50px;">
+          <h2 class="title is-3">🔔News</h2>
+          <div class="content has-text-justified">
+            <p>
+              <b>🚀[2024-06-01]: <a style="color:#6fbf73;"><b>MixEval</b></a> is released! Checkout the <a href="">Paper</a> and <a href="#leaderboard">Leaderboard</a> to learn more about this reliable, holistic, and efficient benchmark!🌟</b>
+            </p>
+          </div>
+        </div>      
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified" style="width: 80%; margin: auto; margin-bottom: 30px;">
+          <p>
+            Evaluating large language models (LLMs) in real-world scenarios is challenging. Traditional ground-truth-based benchmarks fail to capture the diversity and subtlety of real-world queries, while LLM-as-judge benchmarks suffer from preference biases and limited query quantity. Both approaches also become contaminated over time due to their static nature. User-facing evaluation, such as the widely-used Chatbot Arena, provides valuable insights but is costly and time-consuming. To address these challenges, we propose <b>MixEval</b>, which bridges the gap between real-world user queries and efficient, reproducible evaluation by leveraging user queries mined from the web and matching them with similar queries from existing benchmarks. <b>MixEval</b> is highly aligned with Chatbot Arena, achieving a 0.96 Spearman's correlation, significantly exceeding existing singular benchmarks. Moreover, <b>MixEval</b> only needs to be run locally and quickly (6% of the time and cost of MMLU), eliminating the need for slow and costly user preference data collection. The data points of <b>MixEval</b> can be effortlessly updated within 1 minute, with merely 0.36 Std. (on a 0-100 scale) between versions, effectively mitigating benchmark contamination. We provide meta-evaluation and extensive analysis for <b>MixEval</b> and other LLM benchmarks to deepen the community's understanding of LLM evaluation and guide future research directions.
+          </p>
+        </div>
+        <div class="content has-text-justified" style="width: 95%; margin: auto; margin-bottom: 0px;">
+          <p>
+            <a style="color:#ed4b82;"><b>TL;DR:</b></a> We introduce <b>MixEval</b>, a ground-truth-based <b>dynamic</b> benchmark derived from off-the-shelf benchmark mixtures, which evaluates LLMs with a highly <b>capable</b> model ranking (i.e., 0.96 correlation with Chatbot Arena) while running <b>locally and quickly</b> (6% the time and cost of running MMLU), with its queries being stably and effortlessly updated every month to avoid contamination.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</div>
+</section>
+
+<!-- DATASET SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+  <h1 class="title is-1 mmmu">
+    <img src="static/images/mixeval/icons/mixeval.png" style="width:1em;vertical-align: middle" alt="Logo"/>
+    <span class="mmmu" style="vertical-align: middle">MixEval</span>
+  </h1>
+  </div>
+</section>
+
+<!-- <section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p> -->
+            
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-full-width has-text-centered"> -->
+      <div class="column is-four-fifths" style="width: 80%; margin-bottom: 30px;">
+        <h2 class="title is-3">What is MixEval?</h2>
+          <div class="content has-text-centered">
+            <img src="static/images/mixeval/mixeval_pipeline.png" alt="MixEval Pipeline" class="center" style="width: 80%; margin: auto; margin-bottom: 10px; margin-top: 50px;">
+            <div class="content has-text-justified" style="width: 80%; margin: auto; margin-bottom: 30px;">
+            <p> 
+              <a style="color: #999999ff;"> 
+              MixEval, a two-stage benchmark reconstruction pipeline, comprises (1) web query detection and (2) benchmark mixture. We further introduce MixEval-Hard to enhance model separability, alongside a dynamic updating mechanism to mitigate contamination risk.
+              </a> 
+            </p>
+            </div>  
+          </div>
+        <div class="content has-text-justified">
+          <p>
+            <a style="color:#6fbf73;"><b>MixEval</b></a> is an approach that bridges the gap between real-world user queries and efficient, reproducible evaluation by leveraging user queries mined from the web and matching them with similar queries from existing benchmarks. <a style="color:#6fbf73;"><b>MixEval</b></a> is also the proposed benchmark built with this approach.
+          </p>
+          <p>
+            <a style="color:#c56363;"><b>MixEval-Hard</b></a> is the hard version of <a style="color:#6fbf73;"><b>MixEval</b></a>, designed to enhance the benchmark's ability to distinguish strong models. It is sampled from <a style="color:#6fbf73;"><b>MixEval</b></a> based on model evaluation results, with a higher probability of selecting harder queries. To address distribution deviation, we introduce a rejective sampling process to ensure that the distribution of <a style="color:#c56363;"><b>MixEval-Hard</b></a> aligns with that of wild queries.
+          </p>
+          <p>
+            <a style="color:#8a72f5;"><b>Dynamic evaluation</b></a> is introduced to mitigate the contamination issue. We periodically update the data points in <a style="color:#6fbf73;"><b>MixEval</b></a> and <a style="color:#c56363;"><b>MixEval-Hard</b></a> using our fast, stable pipeline, which performs benchmark mixture with a different batch of wild queries from the same distribution, showing low variance (0.36 Std. on a 0-100 scale) and significant version difference (85% unique query ratio).
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-full-width has-text-centered"> -->
+      <div class="column is-four-fifths" style="width: 80%; margin-bottom: 30px;">
+        <h2 class="title is-3">Why Use MixEval Benchmarks?</h2>
+        <div class="content has-text-justified">
+          <div class="content has-text-centered">
+            <img src="static/images/mixeval/linear_with_arena_merged.png" alt="Linear Relationship with Arena Elo" class="center" style="width: 80%; margin: auto; margin-bottom: 10px; margin-top: 50px;">
+            <div class="content has-text-justified" style="width: 80%; margin: auto; margin-bottom: 30px;">
+            <p> 
+              <a style="color: #999999ff;"> 
+              The model scores of MixEval and MixEval-Hard scale linearly with Chatbot Arena Elo. By fitting the data points, the Arena Elo score can be roughly estimated given a model score on MixEval or MixEval-Hard. ρ and e denote the Spearman’s ranking correlation and the root mean square error of the linear fit respectively.
+              </a>
+            </p>
+            </div>  
+          </div>
+          <p>
+            <a style="color:#6fbf73;"><b>MixEval</b></a> offers five significant advantages for practitioners: (1) <a style="color:#ed4b82;"><b>accurate</b></a> model ranking, demonstrated by a 0.96 correlation with Chatbot Arena1 , (2) <a style="color:#ed4b82;"><b>fast, cheap and reproducible</b></a> execution, requiring only 6% the time and cost of MMLU and with no dependence on human input, (3) <a style="color:#ed4b82;"><b>dynamic</b></a> benchmarking enabled by low-effort and stable updating mechanism, (4) a <a style="color:#ed4b82;"><b>comprehensive</b></a> and <a style="color:#ed4b82;"><b>less biased</b></a> query distribution, as it bases queries on a large-scale web corpus, and (5) a <a style="color:#ed4b82;"><b>fair</b></a> scoring process, ensured by the ground-truth-based scoring mechanism.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-full-width has-text-centered"> -->
+      <div class="column is-four-fifths" style="width: 80%; margin-bottom: 30px;">
+        <h2 class="title is-3">How Effective is MixEval as a Benchmark Mixture Approach?</h2>
+        <div class="content has-text-justified">
+          <div class="content has-text-centered">
+            <img src="static/images/mixeval/corr_breakdown_arena_elo.png" alt="Correlation Creakdown with Arena Elo" class="center" style="width: 80%; margin: auto; margin-bottom: 0px; margin-top: 50px;">
+            <img src="static/images/mixeval/corr_breakdown_arena_elo_en.png" alt="Correlation Creakdown with Arena Elo" class="center" style="width: 80%; margin: auto; margin-bottom: 10px;">
+            <div class="content has-text-justified" style="width: 80%; margin: auto; margin-bottom: 30px;">
+            <p> 
+              <a style="color: #999999ff;"> 
+              Our approach improves the correlation with Arena Elo and Arena Elo (En) for all the main splits of MixEval and outperforms benchmark-level and uniform mixture.
+              </a>
+            </p>
+            </div>  
+          </div>
+          <p>
+            <a style="color:#6fbf73;"><b>MixEval</b></a> is effective as (1) <a style="color:#6fbf73;"><b>MixEval</b></a> and <a style="color:#c56363;"><b>MixEval-Hard</b></a> achieve the highest correlation with Arena Elo and Arena Elo (En) among all benchmarks. (2) <a style="color:#6fbf73;"><b>MixEval</b></a> improves the correlation with Arena Elo and Arena Elo (En) across <b>all</b> main benchmark splits of MixEval. (3) <a style="color:#6fbf73;"><b>MixEval</b></a> outperforms both benchmark-level and uniform mixtures. (4) <a style="color:#6fbf73;"><b>MixEval</b></a> effectively maps real-world user queries to ground-truth-based benchmarks.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered m-6">
+      <div class="column is-full has-text-centered content">
+        <h2 class="title is-3">Statistics</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/mixeval/data_dist_histogram.png" alt="MixEval Key Stats" class="center" style="width: 80%; margin: auto; margin-bottom: 0px; margin-top: 0px;">
+              <div class="content has-text-justified" style="width: 50%; margin: auto; margin-bottom: 0px;">
+              <p>
+                <a style="color: #999999ff;"> 
+                  The normalized number of queries in MixEval and the original benchmarks.
+                </a>  
+              </p>
+              </div>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/mixeval/mixeval_keystats.png" alt="MixEval Key Stats" class="center" style="width: 80%; margin: auto; margin-bottom: 0px; margin-top: 0px;">
+              <div class="content has-text-justified" style="width: 80%; margin: auto; margin-bottom: 0px;">
+              <p>
+                <a style="color: #999999ff;"> 
+                  The key statistics of MixEval and MixEval-Hard. With dynamic benchmarking, the numbers may vary slightly while the number of queries will not change.
+                </a>  
+              </p>
+              </div>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/mixeval/dynamic_eval_stability.png" alt="MixEval Key Stats" class="center" style="width: 80%; margin: auto; margin-bottom: 0px; margin-top: 0px;">
+              <div class="content has-text-justified" style="width: 80%; margin: auto; margin-bottom: 0px;">
+              <p>
+                <a style="color: #999999ff;"> 
+                  Stability test for dynamic benchmarking. Five models tested across five updated versions of MixEval show an average mean of 77.64 and a Std. of 0.36, validating the stability of model scores over versions. The unique web query ratio, averaged across all version pairs, is 99.71%, and the unique benchmark query ratio is 85.05%, indicating significant differences between versions.
+                </a>  
+              </p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 mmmu">Results</h1>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+
+
+
+<!-------------------------------------------------------------------- RESULTS SECTION -------------------------------------------------------------------->
+    <div class="columns is-centered m-6">
+      <div class="column is-full has-text-centered content">
+        <h2 class="title is-3" id="leaderboard">Leaderboard</h2>
+        <div class="content">
+          <div class="content has-text-justified">
+            <p>
+              We evaluate LLMs of various sizes from various model developpers.
+              We evaluate both chat and base models. In this project, we mainly discuss the chat models because they are more suitable for user-facing evaluations.
+              In chat model evaluation, we consider both open-source and proprietary models.
+              Our evaluation of chat models is conducted under a zero-shot setting to assess the capability of models to generate accurate answers without fine-tuning or few-shot demonstrations on our benchmark, while the base models are evaluated under a 5-shot setting.
+              For all models, we use the default generation settings provided by each model creator.
+            </p>
+          </div>
+
+          <button id="toggleButton" onclick="changeButtonText()"><b style='font-size: larger;'>Chat Model Leaderboard</b> (Click to Switch)</button>
+          <div class="model-labels-container">
+            <!-- <span class="leaderboard-label" style="background-color: #f8fffe;">Open-Source</span>
+            <span class="leaderboard-label" style="background-color: #f9f2f8;">Closed</span> -->
+            <span class="leaderboard-label" style="background-color:#efefefff;">Open-Source</span>
+            <span class="leaderboard-label" style="background-color: #dae7d8;">Proprietary</span>
+          </div>
+          
+          <!-- The Leaderboard Data -->
+          <table class="js-sort-table" id="table1">
+  
+            <tr>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;"></a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">MixEval-Hard</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">MixEval</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">TriviaQA<br>(Mixed)</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">MMLU<br>(Mixed)</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">DROP<br>(Mixed)</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">HellaSwag<br>(Mixed)</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">CommonsenseQA<br>(Mixed)</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">BoolQ<br>(Mixed)</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">TriviaQA-Hard<br>(Mixed)</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">MMLU-Hard<br>(Mixed)</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">DROP-Hard<br>(Mixed)</a></strong></td>
+            </tr>
+            <tr style="background-color: #dae7d8;">
+              <td style="text-align: left;width: 200px;"><a href="https://openai.com/index/hello-gpt-4o/" target="_blank"><b>GPT-4o</b></a></td>
+              <td><b>64.7</b></td>
+              <td>87.9</td>
+              <td>88.0</td>
+              <td><b>85.4</b></td>
+              <td>87.9</td>
+              <td><b>94.3</b></td>
+              <td>86.8</td>
+              <td>86.3</td>
+              <td>70.3</td>
+              <td><b>57.1</b></td>
+              <td>67.5</td>
+            </tr>
+            <tr style="background-color: #dae7d8;">
+              <td style="text-align: left;width: 200px;"><a href="https://www.anthropic.com/news/claude-3-family" target="_blank"><b>Claude 3 Opus</b></a></td>
+              <td><u>63.5</u></td>
+              <td><u>88.1</u></td>
+              <td><u>90.4</u></td>
+              <td><u>83.2</u></td>
+              <td><b>91.5</b></td>
+              <td>93.3</td>
+              <td>87.7</td>
+              <td>85.1</td>
+              <td><u>71.4</u></td>
+              <td><u>55.0</u></td>
+              <td><b>75.2</b></td>
+            </tr>
+            <tr style="background-color: #dae7d8;">
+              <td style="text-align: left;width: 200px;"><a href="https://platform.openai.com/docs/models/" target="_blank"><b>GPT-4-Turbo</b></a></td>
+              <td>62.6</td>
+              <td><b>88.8</b></td>
+              <td><b>91.2</b></td>
+              <td>82.8</td>
+              <td><u>91.0</u></td>
+              <td>92.6</td>
+              <td>85.4</td>
+              <td>88.0</td>
+              <td><b>73.1</b></td>
+              <td>45.5</td>
+              <td>71.0</td>
+            </tr>
+            <tr style="background-color: #dae7d8;">
+              <td style="text-align: left;width: 200px;"><a href="https://arxiv.org/pdf/2403.05530" target="_blank"><b>Gemini 1.5 Pro</b></a></td>
+              <td>58.7</td>
+              <td>84.2</td>
+              <td>85.3</td>
+              <td>79.2</td>
+              <td>84.2</td>
+              <td>89.2</td>
+              <td>84.4</td>
+              <td>87.4</td>
+              <td>67.8</td>
+              <td>44.6</td>
+              <td>64.8</td>
+            </tr>
+            <tr style="background-color: #dae7d8;">
+              <td style="text-align: left;width: 200px;"><a href="https://platform.01.ai/" target="_blank"><b>Yi-Large</b></a></td>
+              <td>56.8</td>
+              <td>84.4</td>
+              <td>81.7</td>
+              <td>80.9</td>
+              <td>87.0</td>
+              <td>92.6</td>
+              <td><b>90.1</b></td>
+              <td>86.9</td>
+              <td>55.4</td>
+              <td>48.5</td>
+              <td>63.1</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct" target="_blank"><b>LLaMA-3-70B-Instruct</b></a></td>
+              <td>55.9</td>
+              <td>84.0</td>
+              <td>83.1</td>
+              <td>80.5</td>
+              <td>90.1</td>
+              <td>81.8</td>
+              <td>83.0</td>
+              <td><b>88.6</b></td>
+              <td>60.5</td>
+              <td>46.3</td>
+              <td><u>74.5</u></td>
+            </tr>
+            <tr style="background-color: #dae7d8;">
+              <td style="text-align: left;width: 200px;"><a href="https://qwenlm.github.io/blog/qwen-max-0428/" target="_blank"><b>Qwen-Max-0428</b></a></td>
+              <td>55.8</td>
+              <td>86.1</td>
+              <td>86.7</td>
+              <td>80.6</td>
+              <td>85.4</td>
+              <td><u>93.6</u></td>
+              <td><u>88.2</u></td>
+              <td><u>88.6</u></td>
+              <td>61.5</td>
+              <td>41.6</td>
+              <td>53.5</td>
+            </tr>
+            <tr style="background-color: #dae7d8;">
+              <td style="text-align: left;width: 200px;"><a href="https://www.anthropic.com/news/claude-3-family" target="_blank"><b>Claude 3 Sonnet</b></a></td>
+              <td>54.0</td>
+              <td>81.7</td>
+              <td>84.2</td>
+              <td>74.7</td>
+              <td>87.7</td>
+              <td>85.9</td>
+              <td>82.5</td>
+              <td>85.1</td>
+              <td>59.1</td>
+              <td>40.7</td>
+              <td>66.9</td>
+            </tr>
+            <tr style="background-color: #dae7d8;">
+              <td style="text-align: left;width: 200px;"><a href="https://arxiv.org/pdf/2404.12387" target="_blank"><b>Reka Core</b></a></td>
+              <td>52.9</td>
+              <td>83.3</td>
+              <td>82.8</td>
+              <td>79.3</td>
+              <td>88.1</td>
+              <td>88.6</td>
+              <td>81.6</td>
+              <td>85.7</td>
+              <td>51.6</td>
+              <td>46.3</td>
+              <td>66.6</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/TIGER-Lab/MAmmoTH2-8x7B-Plus" target="_blank"><b>MAmmoTH2-8x7B-Plus</b></a></td>
+              <td>51.8</td>
+              <td>81.5</td>
+              <td>83.0</td>
+              <td>74.5</td>
+              <td>85.7</td>
+              <td>82.2</td>
+              <td>82.5</td>
+              <td>83.4</td>
+              <td>52.9</td>
+              <td>41.1</td>
+              <td>65.1</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://arxiv.org/abs/2405.04434" target="_blank"><b>DeepSeek-V2</b></a></td>
+              <td>51.7</td>
+              <td>83.7</td>
+              <td>84.4</td>
+              <td>77.3</td>
+              <td>85.3</td>
+              <td>88.2</td>
+              <td>84.0</td>
+              <td>86.9</td>
+              <td>51.7</td>
+              <td>42.0</td>
+              <td>62.8</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/CohereForAI/c4ai-command-r-plus" target="_blank"><b>Command R+</b></a></td>
+              <td>51.4</td>
+              <td>81.5</td>
+              <td>83.3</td>
+              <td>78.9</td>
+              <td>80.4</td>
+              <td>83.5</td>
+              <td>82.1</td>
+              <td>86.9</td>
+              <td>57.5</td>
+              <td>42.0</td>
+              <td>65.0</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/01-ai/Yi-1.5-34B-Chat" target="_blank"><b>Yi-1.5-34B-Chat</b></a></td>
+              <td>51.2</td>
+              <td>81.7</td>
+              <td>78.4</td>
+              <td>76.4</td>
+              <td>87.0</td>
+              <td>90.2</td>
+              <td>86.8</td>
+              <td>85.1</td>
+              <td>44.4</td>
+              <td>38.1</td>
+              <td>67.4</td>
+            </tr>
+            <tr style="background-color: #dae7d8;">
+              <td style="text-align: left;width: 200px;"><a href="https://mistral.ai/news/mistral-large/" target="_blank"><b>Mistral-Large</b></a></td>
+              <td>50.3</td>
+              <td>84.2</td>
+              <td>88.3</td>
+              <td>80.2</td>
+              <td>88.6</td>
+              <td>65.0</td>
+              <td>83.5</td>
+              <td>87.4</td>
+              <td>55.5</td>
+              <td>42.4</td>
+              <td>61.6</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/Qwen/Qwen1.5-72B-Chat" target="_blank"><b>Qwen1.5-72B-Chat</b></a></td>
+              <td>48.3</td>
+              <td>84.1</td>
+              <td>83.9</td>
+              <td>80.1</td>
+              <td>85.1</td>
+              <td>87.9</td>
+              <td>86.3</td>
+              <td>85.7</td>
+              <td>49.9</td>
+              <td>37.7</td>
+              <td>56.5</td>
+            </tr>
+            <tr style="background-color: #dae7d8;">
+              <td style="text-align: left;width: 200px;"><a href="https://mistral.ai/technology/#models" target="_blank"><b>Mistral-Medium</b></a></td>
+              <td>47.8</td>
+              <td>81.9</td>
+              <td>86.8</td>
+              <td>76.3</td>
+              <td>83.2</td>
+              <td>72.4</td>
+              <td>82.5</td>
+              <td>86.3</td>
+              <td>59.8</td>
+              <td>38.5</td>
+              <td>47.1</td>
+            </tr>
+            <tr style="background-color: #dae7d8;">
+              <td style="text-align: left;width: 200px;"><a href="https://blog.google/technology/ai/google-gemini-ai/" target="_blank"><b>Gemini 1.0 Pro</b></a></td>
+              <td>46.4</td>
+              <td>78.9</td>
+              <td>81.0</td>
+              <td>74.9</td>
+              <td>82.6</td>
+              <td>74.7</td>
+              <td>80.2</td>
+              <td>86.3</td>
+              <td>58.2</td>
+              <td>35.5</td>
+              <td>54.1</td>
+            </tr>
+            <tr style="background-color: #dae7d8;">
+              <td style="text-align: left;width: 200px;"><a href="https://arxiv.org/pdf/2404.12387" target="_blank"><b>Reka Flash</b></a></td>
+              <td>46.2</td>
+              <td>79.8</td>
+              <td>76.4</td>
+              <td>75.4</td>
+              <td>86.7</td>
+              <td>90.6</td>
+              <td>80.7</td>
+              <td>85.7</td>
+              <td>42.9</td>
+              <td>34.6</td>
+              <td>65.0</td>
+            </tr>
+            <tr style="background-color: #dae7d8;">
+              <td style="text-align: left;width: 200px;"><a href="https://mistral.ai/technology/#models" target="_blank"><b>Mistral-Small</b></a></td>
+              <td>46.2</td>
+              <td>81.2</td>
+              <td>85.1</td>
+              <td>75.2</td>
+              <td>86.1</td>
+              <td>73.4</td>
+              <td>77.8</td>
+              <td>81.7</td>
+              <td>56.0</td>
+              <td>33.8</td>
+              <td>52.6</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct" target="_blank"><b>LLaMA-3-8B-Instruct</b></a></td>
+              <td>45.6</td>
+              <td>75.0</td>
+              <td>71.7</td>
+              <td>71.9</td>
+              <td>86.4</td>
+              <td>65.7</td>
+              <td>78.3</td>
+              <td>86.9</td>
+              <td>40.2</td>
+              <td>40.7</td>
+              <td>67.6</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/CohereForAI/c4ai-command-r-v01" target="_blank"><b>Command R</b></a></td>
+              <td>45.2</td>
+              <td>77.0</td>
+              <td>80.9</td>
+              <td>75.0</td>
+              <td>72.0</td>
+              <td>75.8</td>
+              <td>77.4</td>
+              <td>84.0</td>
+              <td>57.0</td>
+              <td>39.0</td>
+              <td>42.0</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/Qwen/Qwen1.5-32B-Chat" target="_blank"><b>Qwen1.5-32B-Chat</b></a></td>
+              <td>43.3</td>
+              <td>81.0</td>
+              <td>75.7</td>
+              <td>78.0</td>
+              <td>82.9</td>
+              <td>85.9</td>
+              <td>88.2</td>
+              <td>85.1</td>
+              <td>39.1</td>
+              <td>29.9</td>
+              <td>54.4</td>
+            </tr>
+            <tr style="background-color: #dae7d8;">
+              <td style="text-align: left;width: 200px;"><a href="https://platform.openai.com/docs/models/" target="_blank"><b>GPT-3.5-Turbo</b></a></td>
+              <td>43.0</td>
+              <td>79.7</td>
+              <td>85.2</td>
+              <td>74.5</td>
+              <td>84.8</td>
+              <td>63.0</td>
+              <td>81.6</td>
+              <td>85.1</td>
+              <td>46.4</td>
+              <td>35.1</td>
+              <td>55.4</td>
+            </tr>
+            <tr style="background-color: #dae7d8;">
+              <td style="text-align: left;width: 200px;"><a href="https://www.anthropic.com/news/claude-3-family" target="_blank"><b>Claude 3 Haiku</b></a></td>
+              <td>42.8</td>
+              <td>79.7</td>
+              <td>79.9</td>
+              <td>76.1</td>
+              <td>85.0</td>
+              <td>75.8</td>
+              <td>78.8</td>
+              <td>86.9</td>
+              <td>42.4</td>
+              <td>30.7</td>
+              <td>51.5</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/01-ai/Yi-1.5-34B-Chat" target="_blank"><b>Yi-34B-Chat</b></a></td>
+              <td>42.6</td>
+              <td>80.1</td>
+              <td>82.7</td>
+              <td>73.6</td>
+              <td>86.1</td>
+              <td>86.9</td>
+              <td>78.8</td>
+              <td>80.6</td>
+              <td>41.5</td>
+              <td>29.9</td>
+              <td>57.1</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1" target="_blank"><b>Mixtral-8x7B-Instruct-v0.1</b></a></td>
+              <td>42.5</td>
+              <td>76.4</td>
+              <td>82.5</td>
+              <td>72.0</td>
+              <td>79.5</td>
+              <td>54.2</td>
+              <td>77.4</td>
+              <td>82.9</td>
+              <td>48.5</td>
+              <td>37.2</td>
+              <td>47.7</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/Nexusflow/Starling-LM-7B-beta" target="_blank"><b>Starling-LM-7B-beta</b></a></td>
+              <td>41.8</td>
+              <td>74.8</td>
+              <td>75.1</td>
+              <td>69.0</td>
+              <td>86.4</td>
+              <td>48.5</td>
+              <td>84.9</td>
+              <td>84.6</td>
+              <td>33.4</td>
+              <td>34.2</td>
+              <td>62.9</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/01-ai/Yi-1.5-9B-Chat" target="_blank"><b>Yi-1.5-9B-Chat</b></a></td>
+              <td>40.9</td>
+              <td>74.2</td>
+              <td>61.3</td>
+              <td>72.6</td>
+              <td>83.9</td>
+              <td>86.5</td>
+              <td>82.5</td>
+              <td>84.6</td>
+              <td>23.3</td>
+              <td>36.8</td>
+              <td>61.3</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/google/gemma-1.1-7b-it" target="_blank"><b>Gemma-1.1-7B-IT</b></a></td>
+              <td>39.1</td>
+              <td>69.6</td>
+              <td>64.3</td>
+              <td>66.9</td>
+              <td>80.6</td>
+              <td>66.3</td>
+              <td>73.6</td>
+              <td>80.6</td>
+              <td>30.3</td>
+              <td>39.0</td>
+              <td>55.1</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/lmsys/vicuna-33b-v1.3" target="_blank"><b>Vicuna-33B-v1.3</b></a></td>
+              <td>38.7</td>
+              <td>66.3</td>
+              <td>79.2</td>
+              <td>59.2</td>
+              <td>71.4</td>
+              <td>30.3</td>
+              <td>61.8</td>
+              <td>73.7</td>
+              <td>42.5</td>
+              <td>39.4</td>
+              <td>36.6</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/meta-llama/Llama-2-70b-chat-hf" target="_blank"><b>LLaMA-2-70B-Chat</b></a></td>
+              <td>38.0</td>
+              <td>74.6</td>
+              <td>80.0</td>
+              <td>69.8</td>
+              <td>79.8</td>
+              <td>67.3</td>
+              <td>74.1</td>
+              <td>76.6</td>
+              <td>42.2</td>
+              <td>27.7</td>
+              <td>42.2</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2" target="_blank"><b>Mistral-7B-Instruct-v0.2</b></a></td>
+              <td>36.2</td>
+              <td>70.0</td>
+              <td>73.7</td>
+              <td>67.3</td>
+              <td>72.8</td>
+              <td>54.2</td>
+              <td>66.0</td>
+              <td>77.7</td>
+              <td>33.5</td>
+              <td>29.4</td>
+              <td>44.3</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/Qwen/Qwen1.5-7B-Chat" target="_blank"><b>Qwen1.5-7B-Chat</b></a></td>
+              <td>35.5</td>
+              <td>71.4</td>
+              <td>64.1</td>
+              <td>68.7</td>
+              <td>76.4</td>
+              <td>76.1</td>
+              <td>82.1</td>
+              <td>81.7</td>
+              <td>29.0</td>
+              <td>29.0</td>
+              <td>50.0</td>
+            </tr>
+            <tr style="background-color: #dae7d8;">
+              <td style="text-align: left;width: 200px;"><a href="https://arxiv.org/pdf/2404.12387" target="_blank"><b>Reka Edge</b></a></td>
+              <td>32.2</td>
+              <td>68.5</td>
+              <td>60.0</td>
+              <td>63.6</td>
+              <td>80.0</td>
+              <td>74.7</td>
+              <td>80.7</td>
+              <td>77.1</td>
+              <td>18.6</td>
+              <td>26.4</td>
+              <td>56.9</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/HuggingFaceH4/zephyr-7b-beta" target="_blank"><b>Zephyr-7B-β</b></a></td>
+              <td>31.6</td>
+              <td>69.1</td>
+              <td>74.7</td>
+              <td>64.9</td>
+              <td>77.3</td>
+              <td>39.1</td>
+              <td>69.3</td>
+              <td>78.3</td>
+              <td>30.2</td>
+              <td>24.2</td>
+              <td>45.3</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/meta-llama/Llama-2-7b-chat-hf" target="_blank"><b>LLaMA-2-7B-Chat</b></a></td>
+              <td>30.8</td>
+              <td>61.7</td>
+              <td>68.8</td>
+              <td>59.4</td>
+              <td>69.3</td>
+              <td>35.7</td>
+              <td>61.3</td>
+              <td>62.9</td>
+              <td>24.8</td>
+              <td>30.3</td>
+              <td>44.3</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/01-ai/Yi-6B-Chat" target="_blank"><b>Yi-6B-Chat</b></a></td>
+              <td>30.1</td>
+              <td>65.6</td>
+              <td>66.1</td>
+              <td>65.4</td>
+              <td>70.5</td>
+              <td>52.5</td>
+              <td>69.8</td>
+              <td>69.7</td>
+              <td>18.9</td>
+              <td>26.8</td>
+              <td>43.7</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B-Chat" target="_blank"><b>Qwen1.5-MoE-A2.7B-Chat</b></a></td>
+              <td>29.1</td>
+              <td>69.1</td>
+              <td>65.9</td>
+              <td>69.5</td>
+              <td>64.6</td>
+              <td>72.7</td>
+              <td>81.1</td>
+              <td>74.9</td>
+              <td>21.9</td>
+              <td>26.8</td>
+              <td>39.5</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/google/gemma-1.1-2b-it" target="_blank"><b>Gemma-1.1-2B-IT</b></a></td>
+              <td>28.4</td>
+              <td>51.9</td>
+              <td>53.7</td>
+              <td>51.5</td>
+              <td>59.8</td>
+              <td>26.6</td>
+              <td>57.1</td>
+              <td>60.0</td>
+              <td>31.9</td>
+              <td>30.3</td>
+              <td>27.8</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/lmsys/vicuna-7b-v1.5" target="_blank"><b>Vicuna-7B-v1.5</b></a></td>
+              <td>27.8</td>
+              <td>60.3</td>
+              <td>66.4</td>
+              <td>58.7</td>
+              <td>68.3</td>
+              <td>24.9</td>
+              <td>62.7</td>
+              <td>65.7</td>
+              <td>25.9</td>
+              <td>23.4</td>
+              <td>33.2</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/allenai/OLMo-7B-Instruct" target="_blank"><b>OLMo-7B-Instruct</b></a></td>
+              <td>26.7</td>
+              <td>55.0</td>
+              <td>51.7</td>
+              <td>57.1</td>
+              <td>53.1</td>
+              <td>55.9</td>
+              <td>64.6</td>
+              <td>71.4</td>
+              <td>24.7</td>
+              <td>27.3</td>
+              <td>22.9</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/Qwen/Qwen1.5-4B-Chat" target="_blank"><b>Qwen1.5-4B-Chat</b></a></td>
+              <td>24.6</td>
+              <td>57.2</td>
+              <td>46.0</td>
+              <td>61.4</td>
+              <td>57.2</td>
+              <td>54.9</td>
+              <td>74.1</td>
+              <td>68.0</td>
+              <td>16.5</td>
+              <td>17.3</td>
+              <td>28.6</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/jetmoe/jetmoe-8b-chat" target="_blank"><b>JetMoE-8B-Chat</b></a></td>
+              <td>24.3</td>
+              <td>51.6</td>
+              <td>46.8</td>
+              <td>58.5</td>
+              <td>27.0</td>
+              <td>86.2</td>
+              <td>68.4</td>
+              <td>64.6</td>
+              <td>19.2</td>
+              <td>25.5</td>
+              <td>11.5</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/mosaicml/mpt-7b-chat" target="_blank"><b>MPT-7B-Chat</b></a></td>
+              <td>23.8</td>
+              <td>43.8</td>
+              <td>50.2</td>
+              <td>37.8</td>
+              <td>50.0</td>
+              <td>25.6</td>
+              <td>36.3</td>
+              <td>60.0</td>
+              <td>17.5</td>
+              <td>24.7</td>
+              <td>31.0</td>
+            </tr>
+          
+        </table>
+
+          <table class="js-sort-table hidden" id="table2">
+    
+            <tr>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;"></a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">MixEval</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">MixEval-Hard</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">TriviaQA<br>(Mixed)</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">MMLU<br>(Mixed)</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">DROP<br>(Mixed)</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">HellaSwag<br>(Mixed)</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">CommonsenseQA<br>(Mixed)</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">BoolQ<br>(Mixed)</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">TriviaQA-Hard<br>(Mixed)</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">MMLU-Hard<br>(Mixed)</a></strong></td>
+              <td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">DROP-Hard<br>(Mixed)</a></strong></td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/meta-llama/Meta-Llama-3-70B" target="_blank"><b>LLaMA-3-70B</b></a></td>
+              <td><b>82.2</b></td>
+              <td><b>54.0</b></td>
+              <td><b>83.1</b></td>
+              <td><b>79.8</b></td>
+              <td><b>81.5</b></td>
+              <td>90.9</td>
+              <td>85.4</td>
+              <td>81.7</td>
+              <td><b>59.1</b></td>
+              <td>39.8</td>
+              <td><b>59.5</b></td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/Qwen/Qwen1.5-72B" target="_blank"><b>Qwen1.5-72B</b></a></td>
+              <td><u>79.5</u></td>
+              <td>41.9</td>
+              <td>78.4</td>
+              <td>78.8</td>
+              <td>64.5</td>
+              <td>91.9</td>
+              <td><u>87.3</u></td>
+              <td><b>86.9</b></td>
+              <td>41.4</td>
+              <td><b>42.4</b></td>
+              <td>26.2</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/01-ai/Yi-1.5-34B" target="_blank"><b>Yi-34B</b></a></td>
+              <td>78.3</td>
+              <td><u>47.2</u></td>
+              <td>72.1</td>
+              <td><u>79.3</u></td>
+              <td><u>78.2</u></td>
+              <td><b>98.0</b></td>
+              <td>81.1</td>
+              <td>79.4</td>
+              <td>39.4</td>
+              <td><u>42.4</u></td>
+              <td><u>56.5</u></td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/Qwen/Qwen1.5-32B" target="_blank"><b>Qwen1.5-32B</b></a></td>
+              <td>77.6</td>
+              <td>41.0</td>
+              <td>71.9</td>
+              <td>77.2</td>
+              <td>68.7</td>
+              <td><u>93.3</u></td>
+              <td><b>89.2</b></td>
+              <td><u>83.4</u></td>
+              <td>28.0</td>
+              <td>37.2</td>
+              <td>36.9</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/mistralai/Mixtral-8x7B-v0.1" target="_blank"><b>Mixtral-8x7B</b></a></td>
+              <td>74.0</td>
+              <td>40.7</td>
+              <td>77.3</td>
+              <td>71.6</td>
+              <td>69.8</td>
+              <td>73.7</td>
+              <td>77.4</td>
+              <td>77.7</td>
+              <td>44.1</td>
+              <td>34.6</td>
+              <td>42.0</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/meta-llama/Llama-2-70b" target="_blank"><b>LLaMA-2-70B</b></a></td>
+              <td>73.2</td>
+              <td>41.6</td>
+              <td><u>78.7</u></td>
+              <td>70.8</td>
+              <td>73.2</td>
+              <td>63.0</td>
+              <td>77.4</td>
+              <td>74.3</td>
+              <td><u>53.8</u></td>
+              <td>29.0</td>
+              <td>46.1</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B" target="_blank"><b>Qwen1.5-MoE-A2.7B</b></a></td>
+              <td>70.2</td>
+              <td>33.5</td>
+              <td>71.3</td>
+              <td>69.4</td>
+              <td>59.9</td>
+              <td>80.1</td>
+              <td>80.2</td>
+              <td>70.9</td>
+              <td>36.0</td>
+              <td>30.7</td>
+              <td>31.0</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/Qwen/Qwen1.5-7B" target="_blank"><b>Qwen1.5-7B</b></a></td>
+              <td>68.2</td>
+              <td>33.7</td>
+              <td>61.4</td>
+              <td>67.0</td>
+              <td>63.6</td>
+              <td>83.8</td>
+              <td>84.4</td>
+              <td>77.7</td>
+              <td>31.6</td>
+              <td>28.6</td>
+              <td>29.8</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/meta-llama/Meta-Llama-3-8B" target="_blank"><b>LLaMA-3-8B</b></a></td>
+              <td>65.1</td>
+              <td>31.7</td>
+              <td>65.2</td>
+              <td>69.5</td>
+              <td>63.8</td>
+              <td>51.5</td>
+              <td>69.8</td>
+              <td>64.0</td>
+              <td>22.6</td>
+              <td>38.5</td>
+              <td>37.1</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/mistralai/Mistral-7B-v0.1" target="_blank"><b>Mistral-7B</b></a></td>
+              <td>64.8</td>
+              <td>27.1</td>
+              <td>67.2</td>
+              <td>68.5</td>
+              <td>61.3</td>
+              <td>54.5</td>
+              <td>67.9</td>
+              <td>68.0</td>
+              <td>24.2</td>
+              <td>27.7</td>
+              <td>34.5</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/google/gemma-7b" target="_blank"><b>Gemma-7B</b></a></td>
+              <td>64.7</td>
+              <td>32.7</td>
+              <td>66.0</td>
+              <td>67.4</td>
+              <td>63.8</td>
+              <td>36.0</td>
+              <td>68.4</td>
+              <td>74.3</td>
+              <td>31.1</td>
+              <td>28.1</td>
+              <td>31.4</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/01-ai/Yi-6B" target="_blank"><b>Yi-6B</b></a></td>
+              <td>63.1</td>
+              <td>30.4</td>
+              <td>54.7</td>
+              <td>71.2</td>
+              <td>51.4</td>
+              <td>77.4</td>
+              <td>76.4</td>
+              <td>65.1</td>
+              <td>17.0</td>
+              <td>37.2</td>
+              <td>19.4</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/Qwen/Qwen1.5-4B" target="_blank"><b>Qwen1.5-4B</b></a></td>
+              <td>58.2</td>
+              <td>23.5</td>
+              <td>47.8</td>
+              <td>59.6</td>
+              <td>51.0</td>
+              <td>65.7</td>
+              <td>79.2</td>
+              <td>72.0</td>
+              <td>14.0</td>
+              <td>22.9</td>
+              <td>24.7</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/jetmoe/jetmoe-8b" target="_blank"><b>JetMoE-8B</b></a></td>
+              <td>57.1</td>
+              <td>27.0</td>
+              <td>53.4</td>
+              <td>55.3</td>
+              <td>44.1</td>
+              <td>89.2</td>
+              <td>60.4</td>
+              <td>64.6</td>
+              <td>22.8</td>
+              <td>27.3</td>
+              <td>19.2</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/deepseek-ai/deepseek-llm-7b-base" target="_blank"><b>DeepSeek-7B</b></a></td>
+              <td>52.2</td>
+              <td>21.7</td>
+              <td>58.7</td>
+              <td>53.3</td>
+              <td>43.5</td>
+              <td>35.0</td>
+              <td>51.4</td>
+              <td>62.9</td>
+              <td>21.4</td>
+              <td>26.4</td>
+              <td>21.4</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/microsoft/phi-2" target="_blank"><b>Phi-2</b></a></td>
+              <td>51.9</td>
+              <td>21.9</td>
+              <td>37.0</td>
+              <td>62.5</td>
+              <td>50.4</td>
+              <td>20.2</td>
+              <td>68.9</td>
+              <td>73.1</td>
+              <td>7.3</td>
+              <td>29.0</td>
+              <td>27.1</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/deepseek-ai/deepseek-moe-16b-base" target="_blank"><b>DeepSeekMoE-16B</b></a></td>
+              <td>51.4</td>
+              <td>24.2</td>
+              <td>64.2</td>
+              <td>49.9</td>
+              <td>41.1</td>
+              <td>28.6</td>
+              <td>48.6</td>
+              <td>62.9</td>
+              <td>24.9</td>
+              <td>30.7</td>
+              <td>12.2</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/meta-llama/Llama-2-7b" target="_blank"><b>LLaMA-2-7B</b></a></td>
+              <td>43.1</td>
+              <td>22.1</td>
+              <td>55.5</td>
+              <td>40.8</td>
+              <td>37.6</td>
+              <td>24.9</td>
+              <td>30.7</td>
+              <td>61.7</td>
+              <td>19.5</td>
+              <td>24.7</td>
+              <td>14.9</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/google/gemma-2b" target="_blank"><b>Gemma-2B</b></a></td>
+              <td>38.9</td>
+              <td>22.6</td>
+              <td>41.5</td>
+              <td>37.4</td>
+              <td>32.6</td>
+              <td>33.3</td>
+              <td>31.6</td>
+              <td>58.9</td>
+              <td>12.1</td>
+              <td>27.3</td>
+              <td>13.2</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/allenai/OLMo-7B" target="_blank"><b>OLMo-7B</b></a></td>
+              <td>31.8</td>
+              <td>21.2</td>
+              <td>38.4</td>
+              <td>29.7</td>
+              <td>24.0</td>
+              <td>26.9</td>
+              <td>25.5</td>
+              <td>49.1</td>
+              <td>16.0</td>
+              <td>25.1</td>
+              <td>11.1</td>
+            </tr>
+            <tr style="background-color: #efefefff;">
+              <td style="text-align: left;width: 200px;"><a href="https://huggingface.co/mosaicml/mpt-7b" target="_blank"><b>MPT-7B</b></a></td>
+              <td>30.8</td>
+              <td>17.4</td>
+              <td>33.5</td>
+              <td>30.9</td>
+              <td>26.8</td>
+              <td>19.2</td>
+              <td>28.8</td>
+              <td>44.0</td>
+              <td>6.6</td>
+              <td>24.2</td>
+              <td>9.2</td>
+            </tr>
+          
+        </table>
+        <p style="text-align: left;"> 
+          The evaluation results of chat and base models on MixEval, MixEval-Hard, and their subsplits. The best-performing model in each category is <b>in-bold</b>, and the second best is <u>underlined</u>. *: results provided by the authors.</p>
+        </div>
+      </div>
+    </div>
+
+
+<!-------------------------------------------------------------------- RESULTS SECTION -------------------------------------------------------------------->
+
+
+  </div>
+</section>
+
+
+<!-- @PAN TODO: bibtex -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">BibTeX</h2>
+    <pre><code>
+      @article{ni2024mixeval,
+        title={MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures},
+        author={Jinjie Ni and Fuzhao Xue and Xiang Yue and Yuntian Deng and Mahir Shah and Kabir Jain and Graham Neubig and Yang You},
+        journal={arXiv preprint arXiv:[placeholder]},
+        year={2024}
+      }
+</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <!-- <div class="container"> -->
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is website adapted from <a href="https://mmmu-benchmark.github.io/">MMMU</a> and <a href="https://nerfies.github.io/">Nerfies</a>, licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+
+</footer>
+
+<script>
+  function changeButtonText() {
+    var button = document.getElementById('toggleButton');
+    if (button.innerHTML.includes("Chat Model Leaderboard")) {
+      button.innerHTML = "<b style='font-size: larger;'>Base Model Leaderboard</b> (Click to Switch)";
+    } else {
+      button.innerHTML = "<b style='font-size: larger;'>Chat Model Leaderboard</b> (Click to Switch)";
+    }
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    var tables = document.querySelectorAll('table');
+
+    tables.forEach(function(table) {
+        if (!table) return;
+
+        var initialRows = Array.from(table.rows).slice(1);
+        table.addEventListener('click', function(event) {
+            var clickedCell = event.target.closest('td, th');
+            if (!clickedCell) return;
+            var headerRow = clickedCell.parentNode;
+            var columnIndex = Array.from(headerRow.cells).indexOf(clickedCell);
+            var type = clickedCell.getAttribute('data-type');
+
+            if (headerRow.rowIndex === 0) {
+                if (columnIndex === 0) {
+                    table.tBodies[0].innerHTML = '';
+                    initialRows.forEach(row => table.tBodies[0].appendChild(row.cloneNode(true)));
+                }
+            }
+        });
+    });
+});
+
+function sortTable(table, column, type, asc) {
+    var tbody = table.tBodies[0];
+    var rows = Array.from(tbody.rows);
+
+    rows.sort(function(a, b) {
+        var valA = a.cells[column].textContent;
+        var valB = b.cells[column].textContent;
+
+        if (type === 'number') {
+            valA = parseFloat(valA);
+            valB = parseFloat(valB);
+        }
+
+        return asc ? valA - valB : valB - valA;
+    });
+
+    rows.forEach(row => tbody.appendChild(row));
+}
+
+  // 切换表格的函数
+  function toggleTables () {
+      var table1 = document.getElementById('table1');
+      var table2 = document.getElementById('table2');
+      table1.classList.toggle('hidden');
+      table2.classList.toggle('hidden');
+  }
+
+  document.getElementById('toggleButton').addEventListener('click', toggleTables);
+  const canvas = document.getElementById('difficulty_level_chart');
+  canvas.style.width = '500px';
+  canvas.style.height = '120px';
+  const ctx = document.getElementById('difficulty_level_chart').getContext('2d');
+  const difficulty_level_chart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Easy', 'Medium', 'Hard', 'Overall'],
+      datasets: [{
+        label: 'Fuyu-8B',
+        data: [28.9, 27, 26.4, 27.4],
+        backgroundColor: 'rgba(196, 123, 160, 0.6)',
+        borderColor: 'rgba(196, 123, 160, 1)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(196, 123, 160, 1)'
+      },
+      {
+        label: 'Qwen-VL-7B',
+        data: [39.4, 31.9, 27.6, 32.9],
+        backgroundColor: 'rgba(245, 123, 113, 0.6)',
+        borderColor: 'rgba(245, 123, 113, 1)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(245, 123, 113, 1)'
+      },
+      {
+        label: 'LLaVA-1.5-13B',
+        data: [41.3, 32.7, 26.7, 33.6],
+        backgroundColor: 'rgba(255, 208, 80, 0.6)',
+        borderColor: 'rgba(255, 208, 80, 1)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(255, 208, 80, 1)'
+      },
+      {
+        label: 'InstructBLIP-T5-XXL',
+        data: [40.3, 32.3, 29.4, 33.8],
+        backgroundColor: 'rgba(110, 194, 134, 0.6)',
+        borderColor: 'rgba(110, 194, 134, 1)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(110, 194, 134, 1)'
+      },
+      {
+        label: 'BLIP-2 FLAN-T5-XXL',
+        data: [41, 32.7, 28.5, 34],
+        backgroundColor: 'rgba(255, 153, 78, 0.6)',
+        borderColor: 'rgba(255, 153, 78, 1)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(255, 153, 78, 1)'
+      },
+      {
+        label: 'GPT-4V',
+        data: [76.1, 55.6, 31.2, 55.7],
+        backgroundColor: 'rgba(117, 209, 215, 0.6)',
+        borderColor: 'rgba(117, 209, 215, 1)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(117, 209, 215, 1)'
+      }]
+    },
+    options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+        min: 0,
+        max: 100,
+        ticks: {
+          stepSize: 20,
+          font: {
+            size: 16
+          }
+        }
+      },
+      x: {
+        ticks: {
+          font: {
+            size: 16 // 设置X轴字体大小
+          }
+        }
+      }
+    },
+    plugins: {
+      legend: {
+        labels: {
+          font: {
+            size: 16 // 设置标签文字大小
+          }
+        }
+      },
+      tooltip: {
+        callbacks: {
+          label: function(context) {
+            return context.dataset.label + ': ' + context.parsed.y;
+          }
+        }
+      }
+    },
+      onHover: (event, chartElement) => {
+        event.native.target.style.cursor = chartElement[0] ? 'pointer' : 'default';
+      }
+    }
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+    // Data for the "Diagrams" chart
+    const data_Diagrams = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [27.6, 30.1, 31.8, 30.0, 32.0, 46.8],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+
+    // "data_Diagrams" chart
+    new Chart(document.getElementById('chart_Diagrams'), {
+        type: 'bar',
+        data: data_Diagrams,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_Tables" chart
+    const data_Tables  = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [26.6, 29.0, 29.8, 27.8, 27.8, 61.8],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_Tables'), {
+        type: 'bar',
+        data: data_Tables,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_PlotsAndCharts " chart
+    const data_PlotsAndCharts   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [24.8, 31.8, 36.2, 30.4, 35.8, 55.6],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_PlotsAndCharts'), {
+        type: 'bar',
+        data: data_PlotsAndCharts ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_ChemicalStructures " chart
+    const data_ChemicalStructures   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [25.0, 27.2, 27.1, 26.7, 25.5, 50.6],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_ChemicalStructures'), {
+        type: 'bar',
+        data: data_ChemicalStructures ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_Photographs " chart
+    const data_Photographs   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [27.6, 40.5, 41.4, 44.4, 42.0, 64.2],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_Photographs'), {
+        type: 'bar',
+        data: data_Photographs ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_Paintings " chart
+    const data_Paintings   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [28.7, 57.2, 53.6, 56.3, 52.1, 75.9],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_Paintings'), {
+        type: 'bar',
+        data: data_Paintings ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_GeometricShapes " chart
+    const data_GeometricShapes   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [21.1, 25.3, 21.4, 25.6, 28.3, 40.2],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_GeometricShapes'), {
+        type: 'bar',
+        data: data_GeometricShapes ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_SheetMusic " chart
+    const data_SheetMusic   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [35.2, 33.4, 34.6, 35.8, 34.9, 38.8],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_SheetMusic'), {
+        type: 'bar',
+        data: data_SheetMusic ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_MedicalImages " chart
+    const data_MedicalImages   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [25.4, 29.8, 31.6, 36.4, 29.8, 59.6],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_MedicalImages'), {
+        type: 'bar',
+        data: data_MedicalImages ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_PathologicalImages " chart
+    const data_PathologicalImages   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [26.5, 27.7, 31.2, 35.2, 35.6, 63.6],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_PathologicalImages'), {
+        type: 'bar',
+        data: data_PathologicalImages ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_MicroscopicImages " chart
+    const data_MicroscopicImages   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [27.0, 37.6, 29.2, 36.3, 32.7, 58.0],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_MicroscopicImages'), {
+        type: 'bar',
+        data: data_MicroscopicImages ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_MRIsCTScansXrays " chart
+    const data_MRIsCTScansXrays   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [21.7, 36.9, 33.3, 39.4, 29.8, 50.0],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_MRIsCTScansXrays'), {
+        type: 'bar',
+        data: data_MRIsCTScansXrays ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_SketchesAndDrafts " chart
+    const data_SketchesAndDrafts   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [37.0, 32.1, 29.9, 38.0, 33.7, 55.4],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_SketchesAndDrafts'), {
+        type: 'bar',
+        data: data_SketchesAndDrafts ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_Maps " chart
+    const data_Maps   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [38.2, 36.5, 45.9, 47.6, 43.5, 61.8],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_Maps'), {
+        type: 'bar',
+        data: data_Maps ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_TechnicalBlueprints " chart
+    const data_TechnicalBlueprints   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [24.7, 25.9, 28.4, 25.3, 27.8, 38.9],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_TechnicalBlueprints'), {
+        type: 'bar',
+        data: data_TechnicalBlueprints ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_TreesAndGraphs " chart
+    const data_TreesAndGraphs   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [30.1, 28.1, 28.8, 28.8, 34.9, 50.0],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_TreesAndGraphs'), {
+        type: 'bar',
+        data: data_TreesAndGraphs ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_MathematicalNotations " chart
+    const data_MathematicalNotations   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [15.8, 27.1, 22.6, 21.8, 21.1, 45.9],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_MathematicalNotations'), {
+        type: 'bar',
+        data: data_MathematicalNotations ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_ComicsAndCartoons " chart
+    const data_ComicsAndCartoons   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [29.0, 51.9, 49.6, 54.2, 51.1, 68.7],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_ComicsAndCartoons'), {
+        type: 'bar',
+        data: data_ComicsAndCartoons ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_Sculpture " chart
+    const data_Sculpture   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [30.8, 46.2, 49.6, 51.3, 53.0, 76.1],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_Sculpture'), {
+        type: 'bar',
+        data: data_Sculpture ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_Portraits " chart
+    const data_Portraits   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [20.9, 52.7, 46.2, 54.9, 47.3, 70.3],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_Portraits'), {
+        type: 'bar',
+        data: data_Portraits ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_Screenshots " chart
+    const data_Screenshots   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [38.6, 35.7, 38.6, 34.3, 47.1, 65.7],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_Screenshots'), {
+        type: 'bar',
+        data: data_Screenshots ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_Other " chart
+    const data_Other   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [28.3, 38.3, 50.0, 51.7, 58.3, 68.3],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_Other'), {
+        type: 'bar',
+        data: data_Other ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_Poster " chart
+    const data_Poster   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [38.6, 50.9, 52.6, 61.4, 64.9, 80.7],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_Poster'), {
+        type: 'bar',
+        data: data_Poster ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_IconsAndSymbols " chart
+    const data_IconsAndSymbols   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [23.8, 66.7, 57.1, 59.5, 59.5, 78.6],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_IconsAndSymbols'), {
+        type: 'bar',
+        data: data_IconsAndSymbols ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_HistoricalTimelines " chart
+    const data_HistoricalTimelines   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [30.0, 36.7, 40.0, 43.3, 43.3, 63.3],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_HistoricalTimelines'), {
+        type: 'bar',
+        data: data_HistoricalTimelines ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_3DRenderings " chart
+    const data_3DRenderings   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [33.3, 28.6, 57.1, 38.1, 47.6, 47.6],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_3DRenderings'), {
+        type: 'bar',
+        data: data_3DRenderings ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_DNASequences " chart
+    const data_DNASequences   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [20.0, 45.0, 25.0, 25.0, 45.0, 55.0],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_DNASequences'), {
+        type: 'bar',
+        data: data_DNASequences ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_Landscapes " chart
+    const data_Landscapes   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [43.8, 43.8, 50.0, 31.2, 62.5, 68.8],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_Landscapes'), {
+        type: 'bar',
+        data: data_Landscapes ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_LogosAndBranding " chart
+    const data_LogosAndBranding   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [21.4, 57.1, 64.3, 35.7, 50.0, 85.7],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_LogosAndBranding'), {
+        type: 'bar',
+        data: data_LogosAndBranding ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 20
+            }
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+
+    // "data_Advertisements " chart
+    const data_Advertisements   = {
+        labels: ['Fuyu-8B', 'Qwen-VL-7B', 'InstructBLIP-T5-XXL', 'LLaVA-1.5-13B', 'BLIP-2 FLAN-T5-XXL', 'GPT-4V'],
+        datasets: [{
+            data: [30.0, 60.0, 50.0, 60.0, 70.0, 100.0],
+            backgroundColor: ['rgba(196, 123, 160, 0.6)', 'rgba(245, 123, 113, 0.6)', 'rgba(255, 208, 80, 0.6)', 'rgba(110, 194, 134, 0.6)', 'rgba(255, 153, 78, 0.6)', 'rgba(117, 209, 215, 0.6)'],
+            borderColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,0.4)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)'],
+            hoverBackgroundColor: ['rgba(196, 123, 160, 1)', 'rgba(245, 123, 113,1)', 'rgba(255, 208, 80, 1)', 'rgba(110, 194, 134, 1)', 'rgba(255, 153, 78, 1)', 'rgba(117, 209, 215, 1)']
+        }]
+    };
+    new Chart(document.getElementById('chart_Advertisements'), {
+        type: 'bar',
+        data: data_Advertisements ,
+        options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,     
+            max: 100,   
+            ticks: {
+              stepSize: 20 
+            }
+          },
+          x: {
+            display: false 
+          }
+        },
+        plugins: {
+          legend: {
+            display: false 
+          },
+          tooltip: {
+          }
+        }
+      }
+    });
+});
+
+</script>
+
+<style>
+  .hidden {
+      display: none;
+  }
+  .sortable:hover {
+      cursor: pointer;
+  }
+  .asc::after {
+      content: ' ↑';
+  }
+  .desc::after {
+      content: ' ↓';
+  }
+  #toggleButton {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    color: #555555;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition-duration: 0.4s;
+  }
+
+  #toggleButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); /* 鼠标悬停时的阴影效果 */
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+
+  th, td {
+      text-align: left;
+      padding: 8px;
+  }
+
+  th {
+      background-color: #f2f2f2;
+      border-bottom: 2px solid #ddd;
+  }
+
+  td:hover {background-color: #ffffff;}
+</style>
+
+</body>
+</html>
