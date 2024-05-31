@@ -165,5 +165,5 @@ def generate_html_table(input_file, output_file, table_id='table1'):
     with open(output_file, "w") as file:
         file.write(html_table)
 
-generate_html_table('static/utils/scores_chat.xlsx', 'static/utils/output_html_tab_chat.html')
-# generate_html_table('static/utils/scores_base.xlsx', 'static/utils/output_html_tab_base.html', table_id='table2')
+generate_html_table('data/scores_chat.xlsx', 'static/utils/output_html_tab_chat.html')
+# generate_html_table('data/scores_base.xlsx', 'static/utils/output_html_tab_base.html', table_id='table2')
