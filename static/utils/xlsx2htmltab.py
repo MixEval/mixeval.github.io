@@ -2,15 +2,15 @@ import pandas as pd
 import re
 
 meta_dicts = {
-    'GPT-4o': {'url': 'https://openai.com/index/hello-gpt-4o/'},
+    'GPT-4o-2024-05-13': {'url': 'https://openai.com/index/hello-gpt-4o/'},
     'Claude 3 Opus': {'url': 'https://www.anthropic.com/news/claude-3-family'},
-    'GPT-4-Turbo': {'url': 'https://platform.openai.com/docs/models/'},
-    'Gemini 1.5 Pro': {'url': 'https://arxiv.org/pdf/2403.05530'},
-    'Yi-Large': {'url': 'https://platform.01.ai/'},
+    'GPT-4-Turbo-2024-04-09': {'url': 'https://platform.openai.com/docs/models/'},
+    'Gemini 1.5 Pro-API-0409': {'url': 'https://arxiv.org/pdf/2403.05530'},
+    'Yi-Large-preview': {'url': 'https://platform.01.ai/'},
     'LLaMA-3-70B-Instruct': {'url': 'https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct'},
     'Qwen-Max-0428': {'url': 'https://qwenlm.github.io/blog/qwen-max-0428/'},
     'Claude 3 Sonnet': {'url': 'https://www.anthropic.com/news/claude-3-family'},
-    'Reka Core': {'url': 'https://arxiv.org/pdf/2404.12387'},
+    'Reka Core-20240415': {'url': 'https://arxiv.org/pdf/2404.12387'},
     'MAmmoTH2-8x7B-Plus': {'url': 'https://huggingface.co/TIGER-Lab/MAmmoTH2-8x7B-Plus'},
     'DeepSeek-V2': {'url': 'https://arxiv.org/abs/2405.04434'},
     'Command R+': {'url': 'https://huggingface.co/CohereForAI/c4ai-command-r-plus'},
@@ -19,12 +19,12 @@ meta_dicts = {
     'Qwen1.5-72B-Chat': {'url': 'https://huggingface.co/Qwen/Qwen1.5-72B-Chat'},
     'Mistral-Medium': {'url': 'https://mistral.ai/technology/#models'},
     'Gemini 1.0 Pro': {'url': 'https://blog.google/technology/ai/google-gemini-ai/'},
-    'Reka Flash': {'url': 'https://arxiv.org/pdf/2404.12387'},
+    'Reka Flash-20240226': {'url': 'https://arxiv.org/pdf/2404.12387'},
     'Mistral-Small': {'url': 'https://mistral.ai/technology/#models'},
     'LLaMA-3-8B-Instruct': {'url': 'https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct'},
     'Command R': {'url': 'https://huggingface.co/CohereForAI/c4ai-command-r-v01'},
     'Qwen1.5-32B-Chat': {'url': 'https://huggingface.co/Qwen/Qwen1.5-32B-Chat'},
-    'GPT-3.5-Turbo': {'url': 'https://platform.openai.com/docs/models/'},
+    'GPT-3.5-Turbo-0125': {'url': 'https://platform.openai.com/docs/models/'},
     'Claude 3 Haiku': {'url': 'https://www.anthropic.com/news/claude-3-family'},
     'Yi-34B-Chat': {'url': 'https://huggingface.co/01-ai/Yi-1.5-34B-Chat'},
     'Mixtral-8x7B-Instruct-v0.1': {'url': 'https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1'},
@@ -35,7 +35,7 @@ meta_dicts = {
     'LLaMA-2-70B-Chat': {'url': 'https://huggingface.co/meta-llama/Llama-2-70b-chat-hf'},
     'Mistral-7B-Instruct-v0.2': {'url': 'https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2'},
     'Qwen1.5-7B-Chat': {'url': 'https://huggingface.co/Qwen/Qwen1.5-7B-Chat'},
-    'Reka Edge': {'url': 'https://arxiv.org/pdf/2404.12387'},
+    'Reka Edge-20240208': {'url': 'https://arxiv.org/pdf/2404.12387'},
     'Zephyr-7B-β': {'url': 'https://huggingface.co/HuggingFaceH4/zephyr-7b-beta'},
     'LLaMA-2-7B-Chat': {'url': 'https://huggingface.co/meta-llama/Llama-2-7b-chat-hf'},
     'Yi-6B-Chat': {'url': 'https://huggingface.co/01-ai/Yi-6B-Chat'},
@@ -166,4 +166,4 @@ def generate_html_table(input_file, output_file, table_id='table1'):
         file.write(html_table)
 
 generate_html_table('static/utils/scores_chat.xlsx', 'static/utils/output_html_tab_chat.html')
-generate_html_table('static/utils/scores_base.xlsx', 'static/utils/output_html_tab_base.html', table_id='table2')
+# generate_html_table('static/utils/scores_base.xlsx', 'static/utils/output_html_tab_base.html', table_id='table2')
