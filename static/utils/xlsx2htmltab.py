@@ -71,22 +71,22 @@ meta_dicts = {
 }
 
 proprietary_models = [
-    'GPT-4o',
+    'GPT-4o-2024-05-13',
     'Claude 3 Opus',
-    'GPT-4-Turbo',
-    'Gemini 1.5 Pro',
-    'Yi-Large',
+    'GPT-4-Turbo-2024-04-09',
+    'Gemini 1.5 Pro-API-0409',
+    'Yi-Large-preview',
     'Qwen-Max-0428',
     'Claude 3 Sonnet',
-    'Reka Core',
+    'Reka Core-20240415',
     'Mistral-Large',
     'Mistral-Medium',
     'Gemini 1.0 Pro',
-    'Reka Flash',
+    'Reka Flash-20240226',
     'Mistral-Small',
-    'GPT-3.5-Turbo',
+    'GPT-3.5-Turbo-0125',
     'Claude 3 Haiku',
-    'Reka Edge'
+    'Reka Edge-20240208'
 ]
 
 
