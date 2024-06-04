@@ -161,6 +161,15 @@
                   </a>
               </span>
               <span class="link-block">
+                <a href="#meta-eval"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon has-text-white">
+                    <i class="fa-solid fa-binoculars"></i>
+                  </span>
+                  <span>Meta-Evaluation</span>
+                </a>
+              </span>
+              <span class="link-block">
                 <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -204,6 +213,7 @@
                   <span>Twitter</span>
                 </a>
               </span>
+
               <!-- Examples. -->
               <!-- <span class="link-block">
                 <a href="#examples"
@@ -426,21 +436,18 @@
 </section>
 
 <!-- RESULTS SECTION -->
-<section class="hero is-light is-small">
-  <div class="hero-body has-text-centered">
-    <h1 class="title is-1 mmmu">Results</h1>
+<section class="hero is-light is-small" style="margin-bottom: 0px; padding-bottom: 0px;">
+  <div class="hero-body has-text-centered" style="margin-bottom: 0px;">
+    <h1 class="title is-1 mmmu" id="leaderboard" style="margin-bottom: 0px;">Leaderboard</h1>
   </div>
 </section>
-<section class="section">
-  <div class="container">
-
-
-
-<!-------------------------------------------------------------------- RESULTS SECTION -------------------------------------------------------------------->
-    <div class="columns is-centered m-6">
-      <div class="column is-full has-text-centered content">
-        <h2 class="title is-3" id="leaderboard" style="margin-bottom: 0px;">Leaderboard</h2>
-        <h3 class="title is-6" id="leaderboard" style="margin-top: 15px; color: #159d53">Dynamic Benchmark Version: 2024-06-01</h3>
+<section class="section" style="margin-top: 10px; padding-top: 0px;">
+  <div class="container" style="margin-top: 10px; padding-top: 0px;">
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-5" id="dynamic-version" style="margin-top: 50px; padding-top: 0px; color: #159d53">Dynamic Benchmark Version: 2024-06-01</h2>
+    </div>
+    <div class="columns is-centered m-6" style="margin-top: 0px; padding-top: 0px;">
+      <div class="column is-full has-text-centered content" style="margin-top: 0px; padding-top: 0px;">
         <div class="content">
           <div class="content has-text-justified">
             <p>
@@ -1415,11 +1422,83 @@
       </div>
     </div>
 
-
-<!-------------------------------------------------------------------- RESULTS SECTION -------------------------------------------------------------------->
-
-
   </div>
+</section>
+
+<section class="hero is-light is-small" style="margin-bottom: 0px; padding-bottom: 0px;">
+  <div class="hero-body has-text-centered" style="margin-bottom: 0px;">
+    <h1 class="title is-1 mmmu" id="meta-eval" style="margin-bottom: 0px;">Meta-Evaluation</h1>
+  </div>
+</section>
+
+<section class="section" style="margin-top: 70px; padding-top: 0px;">
+  <div class="container" style="margin-top: 0px; padding-top: 0px;">
+  <div class="columns is-centered has-text-centered">
+    <!-- <div class="column is-full-width has-text-centered"> -->
+      <div class="column is-four-fifths" style="width: 100%; margin-bottom: 30px; margin: auto; ">
+        <h2 class="title is-3">Correlations Between Benchmarks</h2>
+        <div class="content has-text-justified">
+          <div class="content has-text-centered">
+            
+            <div class="center-flex"></div>
+              <iframe src="static/utils/benchmark_correlation_heatmap.html" width="97.5%" height="1120px"></iframe>
+            </div>
+
+            <div class="content has-text-justified" style="width: 80%; margin: auto; margin-bottom: 30px;">
+            <p> 
+              <a style="color: #999999ff;"> 
+                The correlation matrix for benchmarks. MixEval and MixEval-Hard achieve the highest correlations with Chatbot Arena Elo. Each value of the heatmap represents the Spearman’s rank correlation (%) between the model rankings of the corresponding benchmark pairs, where a redder color indicates a higher correlation and a greener color indicates a lower correlation. <b>Hover over the cells to see its exact information.</b>
+              </a>
+            </p>
+            </div>  
+          <!-- </div>
+          <p>
+          </p>
+        </div> -->
+      
+      </div>
+    </div>
+  </div>
+
+  <div class="columns is-centered has-text-centered" style="margin-top: 70px;">
+    <!-- <div class="column is-full-width has-text-centered"> -->
+      <div class="column is-four-fifths" style="width: 100%; margin-bottom: 30px; margin: auto; ">
+        <h2 class="title is-3" style="margin-bottom: 50px;">Benchmark Query Distribution</h2>
+        <div class="content has-text-justified">
+          <div class="content has-text-centered">
+            
+            <div class="center-flex"></div>
+              <img src="static/images/mixeval/all_embeddings_distribution.png" alt="Dist Distribution" class="center" style="width: 80%; margin: auto; margin-bottom: 0px; margin-top: 0px;">
+            </div>
+
+            <div class="content has-text-justified" style="width: 80%; margin: auto; margin-bottom: 30px;">
+            <p> 
+              <a style="color: #999999ff;"> 
+                Query Topic Distribution of the Benchmarks. Ground-truth-based benchmarks are represented by orange dots, wild datasets by yellow dots, and LLM-judged benchmarks (MTBench and Arena-Hard) by yellow dots, all plotted against our detected web queries shown as blue dots. Query sentence embeddings were dimensionally reduced to map them onto a unified 2-D space, facilitating direct comparisons of topic distributions across benchmarks. As we move from the bottom to the top of the figure, query topics transition from non-technical to technical. 
+              </a>
+            </p>
+            </div>  
+
+            <div class="center-flex"></div>
+              <img src="static/images/mixeval/all_embeddings_distribution_on_one.png" alt="Dist Distribution" class="center" style="width: 50%; margin: auto; margin-bottom: 0px; margin-top: 0px;">
+            </div>
+
+            <div class="content has-text-justified" style="width: 80%; margin: auto; margin-bottom: 30px;">
+            <p> 
+              <a style="color: #999999ff;"> 
+                Query topic summarization for the query distribution map. The plot aggregates all queries and divides them into 16 regions. From each region, 100 queries are uniformly sampled and analyzed by GPT-4 for topic summarization. A clear trend is observed, with topics transitioning from non-technical at the bottom to technical at the top.
+              </a>
+            </p>
+            </div>  
+          <!-- </div>
+          <p>
+          </p>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  
 </section>
 
 
