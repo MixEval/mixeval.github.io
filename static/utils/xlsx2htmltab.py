@@ -125,16 +125,16 @@ def generate_html_table(input_file, output_file, table_id='table1'):
     # Update the first column to include the hyperlink and formatting
     df.iloc[1:, 0] = df.iloc[1:, 0].apply(lambda x: f'''<td style="text-align: left;width: 200px;"><a href="{meta_dicts[x]['url']}" target="_blank"><b>{x}</b></a></td>''')
     
-    df.iloc[0] = df.iloc[0].apply(lambda x: f'<td class="js-sort-number" style="background-color:#333333b2;"><strong><a  style="color:#ffffffff;">{x}</a></strong></td>')
+    df.iloc[0] = df.iloc[0].apply(lambda x: f'<td class="js-sort-number" style="background-color:#005a3e;"><strong><a  style="color:#ffffffff;">{x}</a></strong></td>')
     
     # Convert the DataFrame to an HTML string, without headers and index
     html_table = df.to_html(index=False, escape=False, header=False)
     # print(type(html_table))
     # Add the table with specific class and ID
     if table_id=='table1':
-        html_table = html_table.replace('<table border="1" class="dataframe">', '<table class="js-sort-table" id="table1">').replace('<td><td ', '<td ').replace('</td></td>', '</td>')
+        html_table = html_table.replace('<table border="1" class="dataframe">', '<table class="js-sort-table" id="table1"  style="border: 5px solid #005a3e;">').replace('<td><td ', '<td ').replace('</td></td>', '</td>')
     elif table_id=='table2':
-        html_table = html_table.replace('<table border="1" class="dataframe">', '<table class="js-sort-table hidden" id="table2">').replace('<td><td ', '<td ').replace('</td></td>', '</td>')
+        html_table = html_table.replace('<table border="1" class="dataframe">', '<table class="js-sort-table hidden" id="table2"  style="border: 5px solid #005a3e;">').replace('<td><td ', '<td ').replace('</td></td>', '</td>')
     else:
         raise ValueError(f'Invalid table_id: {table_id}.')
     
@@ -153,9 +153,9 @@ def generate_html_table(input_file, output_file, table_id='table1'):
                 is_pm = True
                 break
         if is_pm:
-            html_table = html_table.replace(match[0], match[0].replace('<tr>\n', '<tr style="background-color: #dae7d8;">\n'))
+            html_table = html_table.replace(match[0], match[0].replace('<tr>\n', '<tr style="background-color: #ccccccff;">\n'))
         else:
-            html_table = html_table.replace(match[0], match[0].replace('<tr>\n', '<tr style="background-color: #efefefff;">\n'))
+            html_table = html_table.replace(match[0], match[0].replace('<tr>\n', '<tr style="background-color: #ecececff;">\n'))
         
     # html_table = html_table.replace('<tr>', '<tr style="background-color: rgba(255, 208, 80, 0.15);">')
     # html_table = html_table.replace('<td>', '<td style="padding: 8px; border: 1px solid #ddd; text-align: center;">')
@@ -166,4 +166,4 @@ def generate_html_table(input_file, output_file, table_id='table1'):
         file.write(html_table)
 
 generate_html_table('data/scores_chat.xlsx', 'static/utils/output_html_tab_chat.html')
-# generate_html_table('data/scores_base.xlsx', 'static/utils/output_html_tab_base.html', table_id='table2')
+generate_html_table('data/scores_base.xlsx', 'static/utils/output_html_tab_base.html', table_id='table2')
