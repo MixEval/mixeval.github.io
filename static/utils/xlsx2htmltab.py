@@ -123,27 +123,27 @@ def generate_html_table(input_file, output_file, table_id='table1'):
     #     print(f"'{t}': {{'url': ''}},")
     
     # Update the first column to include the hyperlink and formatting
-    df.iloc[1:, 0] = df.iloc[1:, 0].apply(lambda x: f'''<td style="text-align: left;width: 200px;"><a href="{meta_dicts[x]['url']}" target="_blank"><b>{x}</b></a></td>''')
+    df.iloc[1:, 0] = df.iloc[1:, 0].apply(lambda x: f'''<td style="text-align: center;width: 200px;"><a href="{meta_dicts[x]['url']}" target="_blank"><b>{x}</b></a></td>''')
     
-    df.iloc[0] = df.iloc[0].apply(lambda x: f'<td class="js-sort-number" style="background-color:#005a3e;"><strong><a  style="color:#ffffffff;">{x}</a></strong></td>')
+    df.iloc[0] = df.iloc[0].apply(lambda x: f'<td class="js-sort-number" style="background-color:#999999ff;"><strong><a  style="color:#ffffffff;">{x}</a></strong></td>')
     
     # Convert the DataFrame to an HTML string, without headers and index
     html_table = df.to_html(index=False, escape=False, header=False)
     # print(type(html_table))
     # Add the table with specific class and ID
     if table_id=='table1':
-        html_table = html_table.replace('<table border="1" class="dataframe">', '<table class="js-sort-table" id="table1"  style="border: 5px solid #005a3e;">').replace('<td><td ', '<td ').replace('</td></td>', '</td>')
+        html_table = html_table.replace('<table border="1" class="dataframe">', '<table class="js-sort-table" id="table1"  style="border: 2px solid #999999ff;">').replace('<td><td ', '<td ').replace('</td></td>', '</td>')
     elif table_id=='table2':
-        html_table = html_table.replace('<table border="1" class="dataframe">', '<table class="js-sort-table hidden" id="table2"  style="border: 5px solid #005a3e;">').replace('<td><td ', '<td ').replace('</td></td>', '</td>')
+        html_table = html_table.replace('<table border="1" class="dataframe">', '<table class="js-sort-table hidden" id="table2"  style="border: 2px solid #999999ff;">').replace('<td><td ', '<td ').replace('</td></td>', '</td>')
     else:
         raise ValueError(f'Invalid table_id: {table_id}.')
     
     # Remove thead and tbody tags
-    html_table = html_table.replace('<thead>', '').replace('</thead>', '').replace('nan', '').replace(' (Mixed)', '<br>(Mixed)')
+    html_table = html_table.replace('<thead>', '').replace('</thead>', '').replace('nan', '').replace(' (Mixed)', '<br>(Mixed)').replace("Arena Elo (0527)", "Arena Elo<br> (0527)")
     html_table = html_table.replace('<tbody>', '').replace('</tbody>', '')
 
     # Replace the default <tr>, <th>, and <td> to include style
-    pattern = r'(<tr>\n\s+<td style="text-align: left;width: 200px;"><a href="([^"]+)" target="_blank"><b>(.*?)</b></a></td>)'
+    pattern = r'(<tr>\n\s+<td style="text-align: center;width: 200px;"><a href="([^"]+)" target="_blank"><b>(.*?)</b></a></td>)'
     matches = re.findall(pattern, html_table)
     # print(matches)
     for match in matches:
@@ -153,9 +153,9 @@ def generate_html_table(input_file, output_file, table_id='table1'):
                 is_pm = True
                 break
         if is_pm:
-            html_table = html_table.replace(match[0], match[0].replace('<tr>\n', '<tr style="background-color: #ccccccff;">\n'))
-        else:
             html_table = html_table.replace(match[0], match[0].replace('<tr>\n', '<tr style="background-color: #ecececff;">\n'))
+        else:
+            html_table = html_table.replace(match[0], match[0].replace('<tr>\n', '<tr style="background-color: #fcfcfcff;">\n'))
         
     # html_table = html_table.replace('<tr>', '<tr style="background-color: rgba(255, 208, 80, 0.15);">')
     # html_table = html_table.replace('<td>', '<td style="padding: 8px; border: 1px solid #ddd; text-align: center;">')
