@@ -125,7 +125,10 @@ def generate_html_table(input_file, output_file, table_id='table1'):
     # Update the first column to include the hyperlink and formatting
     df.iloc[1:, 0] = df.iloc[1:, 0].apply(lambda x: f'''<td style="text-align: center;width: 200px;"><a href="{meta_dicts[x]['url']}" target="_blank"><b>{x}</b></a></td>''')
     
-    df.iloc[0] = df.iloc[0].apply(lambda x: f'<td class="js-sort-number" style="background-color:#999999ff;"><strong><a  style="color:#ffffffff;">{x}</a></strong></td>')
+    df.iloc[0] = df.iloc[0].apply(
+        lambda x: f'<td class="js-sort-number" style="background-color:#b3b3b3ff;"><strong><a  style="color:#000000ff;"><b>{x}</b></a></strong></td>' if 'MixEval' not in str(x)
+        else f'<td class="js-sort-number" style="background-color:#b3b3b3ff;"><strong><a  style="color:#000000ff;"><b>{f"{x}<br>🔥"}</b></a></strong></td>'
+        )
     
     # Convert the DataFrame to an HTML string, without headers and index
     html_table = df.to_html(index=False, escape=False, header=False)
