@@ -46,6 +46,7 @@ meta_dicts = {
     'Qwen1.5-4B-Chat': {'url': 'https://huggingface.co/Qwen/Qwen1.5-4B-Chat'},
     'JetMoE-8B-Chat': {'url': 'https://huggingface.co/jetmoe/jetmoe-8b-chat'},
     'MPT-7B-Chat': {'url': 'https://huggingface.co/mosaicml/mpt-7b-chat'},
+    'MAP-Neo-Instruct-v0.1': {'url': 'https://huggingface.co/m-a-p/neo_7b_instruct_v0.1'},
     
     'LLaMA-3-70B': {'url': 'https://huggingface.co/meta-llama/Meta-Llama-3-70B'},
     'Qwen1.5-72B': {'url': 'https://huggingface.co/Qwen/Qwen1.5-72B'},
