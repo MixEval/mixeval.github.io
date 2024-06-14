@@ -6,6 +6,7 @@ meta_dicts = {
     'Claude 3 Opus': {'url': 'https://www.anthropic.com/news/claude-3-family'},
     'GPT-4-Turbo-2024-04-09': {'url': 'https://platform.openai.com/docs/models/'},
     'Gemini 1.5 Pro-API-0409': {'url': 'https://arxiv.org/pdf/2403.05530'},
+    'Gemini 1.5 Pro-API-0514': {'url': 'https://arxiv.org/pdf/2403.05530'},
     'Yi-Large-preview': {'url': 'https://platform.01.ai/'},
     'LLaMA-3-70B-Instruct': {'url': 'https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct'},
     'Qwen-Max-0428': {'url': 'https://qwenlm.github.io/blog/qwen-max-0428/'},
