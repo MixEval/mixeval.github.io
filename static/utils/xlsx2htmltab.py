@@ -78,6 +78,7 @@ proprietary_models = [
     'Claude 3 Opus',
     'GPT-4-Turbo-2024-04-09',
     'Gemini 1.5 Pro-API-0409',
+    'Gemini 1.5 Pro-API-0514',
     'Yi-Large-preview',
     'Qwen-Max-0428',
     'Claude 3 Sonnet',
