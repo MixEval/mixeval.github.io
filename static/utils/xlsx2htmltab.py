@@ -2,6 +2,7 @@ import pandas as pd
 import re
 
 meta_dicts = {
+    'Claude 3.5 Sonnet-0620': {'url': 'https://www.anthropic.com/news/claude-3-5-sonnet'},
     'GPT-4o-2024-05-13': {'url': 'https://openai.com/index/hello-gpt-4o/'},
     'Claude 3 Opus': {'url': 'https://www.anthropic.com/news/claude-3-family'},
     'GPT-4-Turbo-2024-04-09': {'url': 'https://platform.openai.com/docs/models/'},
@@ -74,6 +75,7 @@ meta_dicts = {
 }
 
 proprietary_models = [
+    'Claude 3.5 Sonnet-0620',
     'GPT-4o-2024-05-13',
     'Claude 3 Opus',
     'GPT-4-Turbo-2024-04-09',
