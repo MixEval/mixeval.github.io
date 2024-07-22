@@ -4,6 +4,7 @@ import re
 meta_dicts = {
     'Claude 3.5 Sonnet-0620': {'url': 'https://www.anthropic.com/news/claude-3-5-sonnet'},
     'GPT-4o-2024-05-13': {'url': 'https://openai.com/index/hello-gpt-4o/'},
+    'GPT-4o mini': {'url': 'https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/'},
     'Claude 3 Opus': {'url': 'https://www.anthropic.com/news/claude-3-family'},
     'GPT-4-Turbo-2024-04-09': {'url': 'https://platform.openai.com/docs/models/'},
     'Gemini 1.5 Pro-API-0409': {'url': 'https://arxiv.org/pdf/2403.05530'},
@@ -77,6 +78,7 @@ meta_dicts = {
 proprietary_models = [
     'Claude 3.5 Sonnet-0620',
     'GPT-4o-2024-05-13',
+    'GPT-4o mini',
     'Claude 3 Opus',
     'GPT-4-Turbo-2024-04-09',
     'Gemini 1.5 Pro-API-0409',
