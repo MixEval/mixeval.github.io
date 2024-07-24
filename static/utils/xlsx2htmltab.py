@@ -3,6 +3,7 @@ import re
 
 meta_dicts = {
     'Claude 3.5 Sonnet-0620': {'url': 'https://www.anthropic.com/news/claude-3-5-sonnet'},
+    'LLaMA-3.1-405B-Instruct': {'url': 'https://huggingface.co/meta-llama/Meta-Llama-3.1-405B-Instruct'},
     'GPT-4o-2024-05-13': {'url': 'https://openai.com/index/hello-gpt-4o/'},
     'GPT-4o mini': {'url': 'https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/'},
     'Claude 3 Opus': {'url': 'https://www.anthropic.com/news/claude-3-family'},
